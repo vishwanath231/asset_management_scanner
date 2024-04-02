@@ -71,7 +71,7 @@
 
                     document.getElementById('view_result').innerHTML = `
                         <div class='result_btns'>
-                            <button class='redirect_domo' onclick="redirectdashboard('${data[0]['Style']}')">View Result</button>
+                            <button class='redirect_domo' onclick="redirectdashboard('${data[0]['Asset Id']}')">View Result</button>
                             <button class='redirect_scan' onclick="restartScan()">Scan</button>
                         </div>
                     `;
@@ -97,7 +97,7 @@
         }
 
         function redirectdashboard(code) {
-            window.open(`https://gwcteq-partner.domo.com/page/934302104?pfilters=[{"column": "Asset Id", "dataSourceId": "f2603c8b-aab4-4a22-b09d-cbf7d09a6c9e", "operand": "IN", "values": ["${code}"] }]`, '_blank')
+            window.open(`https://gwcteq-partner.domo.com/page/934302104?pfilters=[{"column": "Asset Id", "dataSourceId": "1b961f4e-a038-4095-b754-60446568d090", "operand": "IN", "values": ["${code}"] }]`, '_blank')
         }                
 
         function restartScan() {

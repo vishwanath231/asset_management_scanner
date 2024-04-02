@@ -14,7 +14,7 @@ const readCSV = (req, res) =>{
     
     const dataArray = [];
 
-    fs.createReadStream(path.join(__dirname, '/upload/Product_Master.csv'))
+    fs.createReadStream(path.join(__dirname, '/upload/asset management dataset.csv'))
       .pipe(csv())
       .on('data', (row) => {
         // Assuming the CSV file has headers, each row will be an object
@@ -31,7 +31,7 @@ const readCSV = (req, res) =>{
 }
 
 function filterByBarcode(arr, barcode) {
-    return arr.filter(item => item.Barcode === barcode);
+    return arr.filter(item => item['Asset Id'] === barcode);
 }
 
 
