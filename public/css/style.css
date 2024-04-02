@@ -8,6 +8,7 @@ body {
     border: none;
     outline: none;
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(236, 245, 248);
 }
 
 main {
@@ -15,8 +16,6 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 10px;
-
 }
 
 
@@ -181,6 +180,7 @@ main {
     margin: 1rem auto;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 25px;
     
 }
 
