@@ -71,7 +71,7 @@
 
                     document.getElementById('view_result').innerHTML = `
                         <div class='result_btns'>
-                            <button class='redirect_domo' onclick="redirectdashboard('${data[0]['Asset Id']}')">View Result</button>
+                            <button class='redirect_domo' onclick="redirectdashboard('${data[0]['__created__']}')">View Result</button>
                             <button class='redirect_scan' onclick="restartScan()">Scan</button>
                         </div>
                     `;
